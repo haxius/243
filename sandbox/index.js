@@ -1,4 +1,4 @@
-const ASPECT_RATIO = 4 / 3;
+let ASPECT_RATIO; // = 16 / 10;
 let SCREEN_WIDTH;
 let SCREEN_HEIGHT;
 
@@ -8,6 +8,8 @@ const canvas = document.createElement("canvas");
 document.body.appendChild(canvas);
 
 function resizeCanvas() {
+  ASPECT_RATIO = window.innerWidth / window.innerHeight;
+  
   if (window.innerWidth / window.innerHeight > ASPECT_RATIO) {
     SCREEN_HEIGHT = window.innerHeight;
     SCREEN_WIDTH = window.innerHeight * ASPECT_RATIO;
