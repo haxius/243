@@ -1,0 +1,84 @@
+@mixin margin($size) {
+  margin-top: ($size * $grid-base);
+  margin-right: ($size * $grid-base);
+  margin-bottom: ($size * $grid-base);
+  margin-left: ($size * $grid-base);
+}
+
+@mixin margin-top($size) {
+  margin-top: ($size * $grid-base);
+}
+
+@mixin margin-right($size) {
+  margin-right: ($size * $grid-base);
+}
+
+@mixin margin-bottom($size) {
+  margin-bottom: ($size * $grid-base);
+}
+
+@mixin margin-left($size) {
+  margin-left: ($size * $grid-base);
+}
+
+@mixin padding($size) {
+  padding-top: ($size * $grid-base);
+  padding-right: ($size * $grid-base);
+  padding-bottom: ($size * $grid-base);
+  padding-left: ($size * $grid-base);
+}
+
+@mixin padding-top($size) {
+  padding-top: ($size * $grid-base);
+}
+
+@mixin padding-right($size) {
+  padding-right: ($size * $grid-base);
+}
+
+@mixin padding-bottom($size) {
+  padding-bottom: ($size * $grid-base);
+}
+
+@mixin padding-left($size) {
+  padding-left: ($size * $grid-base);
+}
+
+@mixin border($size, $type, $color) {
+  border-top: ($size * $grid-base) $type $color;
+  border-right: ($size * $grid-base) $type $color;
+  border-bottom: ($size * $grid-base) $type $color;
+  border-left: ($size * $grid-base) $type $color;
+}
+
+@mixin border-top($size) {
+  border-top: ($size * $grid-base) $type $color;
+}
+
+@mixin border-right($size) {
+  border-right: ($size * $grid-base) $type $color;
+}
+
+@mixin border-bottom($size) {
+  border-bottom: ($size * $grid-base) $type $color;
+}
+
+@mixin border-left($size) {
+  border-left: ($size * $grid-base) $type $color;
+}
+
+@mixin left($size) {
+  left: ($size * $grid-base);
+}
+
+@mixin top($size) {
+  left: ($size * $grid-base);
+}
+
+@mixin right($size) {
+  left: ($size * $grid-base);
+}
+
+@mixin bottom($size) {
+  left: ($size * $grid-base);
+}
